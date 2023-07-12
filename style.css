@@ -1,0 +1,172 @@
+:root {
+    --color-dark-grey: #111111;
+    --color-dark-brown: rgba(71, 67, 6, 1);
+    --color-yellow: rgba(245, 238, 132, 1);
+    --color-light-yellow: rgba(251, 248, 204, 1);
+    --avatar-width: 506px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--color-dark-grey);
+    line-height: 1.5;
+}
+html {
+    font-size: 16px;
+}
+
+body {
+    max-width: 1440px;
+    padding: 0 96px;
+    background-color: var(--color-light-yellow);
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark-grey);
+}
+
+section {
+    margin-bottom: 64px;
+}
+
+.container{
+
+}
+
+.avatar {
+    width: var(--avatar-width);
+    border-radius: 50%;
+}
+
+.navigation {
+    display: flex;
+    gap: 24px;
+    position: fixed;
+    background-color: var(--color-light-yellow);
+    z-index: 5;
+    width: 100%;
+    padding: 37px 0;
+}
+
+.landing-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 191px;
+}
+
+.title {
+    margin: 8px 0;
+}
+
+h1 {
+    font-size: 6.25rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+}
+
+h5 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 0;
+    line-height: normal;
+
+}
+
+strong {
+    font-weight: 600;
+}
+
+.contact-us-image{
+    width: 440px;
+}
+
+button{
+    width: 158px;
+    height: 61px;
+    margin-top: 37px;
+    font-size: 1.25rem;
+    color: var(--color-dark-brown);
+    border: 1px solid var(--color-dark-brown);
+    position: relative;
+}
+
+.button-insides{
+    width: 158px;
+    height: 61px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button-insides:hover{
+    opacity: 0.8;
+    background-color: var(--color-yellow);
+    position: absolute;
+    top: 7px;
+    left: 6px; 
+}
+
+.profile-picture-wrapper{
+    position: relative;
+}
+
+.slashes{
+    position: absolute;
+    top: 345px;
+    left: 11px;
+    font-weight: 500;
+
+}
+
+.profile-picture-border{
+    width: var(--avatar-width);
+    height: 394px;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: -8px;
+}
+
+.plus1,
+.plus2,
+.plus3 {
+    position: absolute;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.plus1{
+    top:16px;
+    right: 24px;
+}
+
+.plus2{
+    top: 8px;
+    right: 40px;
+}
+
+.plus3{
+    top: 0;
+    right: 24px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    line-height: normal;
+}
+
+@media (max-width: 940px){
+    .landing-section{
+        flex-direction: column; 
+    }
+}
