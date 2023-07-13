@@ -11,19 +11,22 @@
     </head>
 <body>
     <nav class="navigation">
+        <div class="navigation-items">
             <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+        </div>
     </nav>
     <div class="container">
         <section class="landing-section">
             <div class="landing-section-text">
                 <h5>Hi ✌ I'm Zhenya,</h5>
                 <h1 class="title">Frontend developer</h1>
-                <h5>based in Minsk.</h1>
-                <button>
-                    <div class="button-insides">Resume</div>
-                </button>
+                <h5 class="based-in">based in Minsk.</h1>
+                    <div class="button-wrapper">
+                        <div class="button-background"></div>
+                        <button>Resume</button>
+                    </div>
             </div>
             <div class="profile-picture-wrapper">
                 <img class="avatar" src="./images/photo.png" alt="Zhenya's profile picture">
@@ -34,9 +37,9 @@
                 <div class="plus3">+</div>
             </div>
         </section>
-        <section>
-            <h1 id="about">about.</h1>
-            <p>I'm a frontend developer with experience in developing SPAs using React/Redux</p>
+        <section class="about-section">
+            <h1 class="section-title" id="about">about.</h1>
+            <p class="paragraph">I'm a frontend developer with experience in developing SPAs using React/Redux.</p>
             <ul>
                 <li>
                     <p><strong>2022 - now</strong></p>
@@ -45,7 +48,7 @@
             </ul>
         </section>
         <section>
-            <h1>skills.</h1>
+            <h1 class="section-title">skills.</h1>
             <ul>
                 <li>JavaScript</li>
                 <li>HTML</li>
@@ -56,12 +59,16 @@
             </ul>
         </section>
         <section>
-            <h1 id="contact">contact.</h1>
-            <img src="./images/phone.jpg" class="contact-us-image" alt="Phone picture">
-            <p>Check out my profiles on Linkedin or contact me via email.</p>
-            <p>It's nice to hear from you!</p>
-            <a href="mailto:evgenynakhay@gmail.com" target="_blank" rel="noopener noreferrer">evgenynakhay@gmail.com</a>
-            <a href="https://www.linkedin.com/in/evgenynakhay/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <h1 class="section-title" id="contact">contact.</h1>
+            <div class="contact-us-content">
+                <img src="./images/phone.jpg" class="contact-us-image" alt="Phone picture">
+                <div class="contact-us-information">
+                    <p>Check out my profiles on Linkedin or contact me via email.</p>
+                    <p class="nice-to-hear">It's nice to hear from you!</p>
+                    <a href="mailto:evgenynakhay@gmail.com" target="_blank" rel="noopener noreferrer">evgenynakhay@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/evgenynakhay/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                </div>
+            </div>
         </section>
     </div> 
 </body>
