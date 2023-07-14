@@ -201,11 +201,21 @@ li {
 }
 
 .nice-to-hear{
-    margin-bottom: 16px;
+    margin: 16px 0;
 }
 
 @media (max-width: 940px){
     .landing-section{
-        flex-direction: column; 
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .landing-section-text{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-us-content {
+        flex-direction: column;
     }
 }
